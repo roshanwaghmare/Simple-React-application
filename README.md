@@ -15,6 +15,12 @@ Dockerfile.dev
 
 ````
 
-- Additional browser support
+- now we name the file docker.dev so
+
+````
+ docker build . #will no work
+docker build -f Dockerfile.dev .  [-f means we are spicifing file to be build ]  #run
+  
+````
 
 - Add more integrations
