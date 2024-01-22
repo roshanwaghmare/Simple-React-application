@@ -1,9 +1,9 @@
 # Simple-React-application
 Docker 
 
-# Creating the Dev Dockerfile
+## Creating the Dev Dockerfile
 
-now we have to name file inside frontend so 
+- now we have to name file inside frontend so 
 
 ````
 ls
@@ -13,4 +13,8 @@ code .
 in vs code create docker file
 Dockerfile.dev
 
-....
+````
+
+- Additional browser support
+
+- Add more integrations
