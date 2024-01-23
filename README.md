@@ -42,10 +42,14 @@ With a Docker volume, we're essentially setting up a **mapping** from a **folder
 
 to run docker volume we have to execute long cmds 
 
--v Means volume $(pwd)  we're essentially saying get the present working directory or the path to it, and take this folder, like this front end folder and everything inside of it, and map it up to the app folder
+1) -v Means volume $(pwd)  we're essentially saying get the present working directory or the path to it, and take this folder, like this front end folder and everything inside of it, and map it up to the app folder
 
+2) earlier we have deleted node modules folder hence this 1 is not working hence we are provide path
+
+3) when we use {:} colun that mean copy the path and paste it to now we dont want to copy we just want to execute
+4) 
 ````
 docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3  #this cmd will not work
 
-docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3
 ````
