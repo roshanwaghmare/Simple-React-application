@@ -63,4 +63,42 @@ docker-compose up
 ````
 5) now we are able make  chnages on src code without building contianer  again.
 
-6) 
+## Executing Tests
+
+````
+docker build -f Dockerfile.dev
+
+docker run c2e9788812f39f7120abf76e7de077c969b3 npm run test  
+#When we run Docker run by default we get a connection to standard out inside the container.
+
+So will use -it flag
+docker run -it c2e9788812f39f7120abf76e7de077c969b3 npm run test
+
+now with nice view we can now able to execute
+
+````
+
+copy and pastes the same two times 
+
+````
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+````
+now we made changes in app.test.js and hit enter it still getting only 1 test 
+
+We've got a container that's been created specifically to run some tests. When we created that container, we essentially took a snapshot of all of our working files and folders, and put that inside the container. So, this very temporary container that we've made just to run our tests, does not have all that volume stuff set up. That is the issue. And so, without any of those volumes set up, we are using old and outdated files inside of our container.
+
+
+
+
+
