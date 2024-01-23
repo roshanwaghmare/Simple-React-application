@@ -32,3 +32,20 @@ docker run e79c31d7f07d249031b1dfa08458dcb5a673eb96de07595a0a5c0a4 container id
 docker run -p 3000:3000 e79c31d7f07d249031b1dfa08458dcb5a673eb96de07595 container id  
 ````
 web localhost:3000
+
+## Docker Volumes
+
+To be able to update the src code we have to make configration so every time when we chnage the src code we dont have to rebuild the image
+
+With a Docker volume, we're essentially setting up a **mapping** from a **folder inside the container** to a folder **outside the container**. Now you might be wondering, why did we not just make use of volumes before if this kind of solves the issue.
+
+
+to run docker volume we have to execute long cmds 
+
+-v Means volume $(pwd)  we're essentially saying get the present working directory or the path to it, and take this folder, like this front end folder and everything inside of it, and map it up to the app folder
+
+````
+docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3  #this cmd will not work
+
+docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3
+````
