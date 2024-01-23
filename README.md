@@ -98,6 +98,8 @@ now we made changes in app.test.js and hit enter it still getting only 1 test
 
 We've got a container that's been created specifically to run some tests. When we created that container, we essentially took a snapshot of all of our working files and folders, and put that inside the container. So, this very temporary container that we've made just to run our tests, does not have all that volume stuff set up. That is the issue. And so, without any of those volumes set up, we are using old and outdated files inside of our container.
 
+so it only taking old chnages 
+
 
 
 
