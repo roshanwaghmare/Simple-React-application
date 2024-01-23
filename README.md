@@ -47,9 +47,20 @@ to run docker volume we have to execute long cmds
 2) earlier we have deleted node modules folder hence this 1 is not working hence we are provide path
 
 3) when we use {:} colun that mean copy the path and paste it to now we dont want to copy we just want to execute
-4) 
+ 
 ````
 docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3  #this cmd will not work
 
-docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf3 this is not working too its not good way it use long cmd  
 ````
+
+4) with the help of docker compse we can execute multiple cmds
+   
+## docker-compse.yml
+
+````
+docker-compose up
+````
+5) now we are able make  chnages on src code without building contianer  again.
+
+6) 
