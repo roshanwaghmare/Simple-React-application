@@ -2,12 +2,12 @@
 Docker 
 
  we need to check if we have node js to check npm -v if version there not then install
- 
+````
 node --version
 npm --v
 curl https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz
 ls
-
+````
 now to create react app will use below command 
 
 npx create-react-app frontend
