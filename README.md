@@ -101,6 +101,14 @@ We've got a container that's been created specifically to run some tests. When w
 so it only taking old chnages 
 
 
+## NGINX 
+
+We not able to start our same Dev Server in Prod Enivorment becoz we are not making any chnage to java code so will create the same container in prod env to run we will use ngnix
+
+NGINX is an extremely popular web server. It doesn't have a lot of logic tied to it. It's really just about taking incoming traffic and somehow routing it or somehow responding to it with some static files, which is exactly what you and I are going to use it for. So we are going to create a separate Docker file
+
+
+
 
 
 
