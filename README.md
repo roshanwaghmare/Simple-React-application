@@ -1,6 +1,17 @@
 # Simple-React-application
 Docker 
 
+ we need to check if we have node js to check npm -v if version there not then install
+ 
+node --version
+npm --v
+curl https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz
+ls
+
+now to create react app will use below command 
+
+npx create-react-app frontend
+
 ## Creating the Dev Dockerfile
 
 - now we have to name file inside frontend so 
@@ -137,7 +148,17 @@ FROM nginx
 COPY --from=builder /app/build /usr/share/nginx/html
 
 ````
-asa
+
+
+we have created Dockerfile will run as defult nginx port is 80
+
+```
+code .
+ls
+docker build .
+docker run -p 8080:80 12afef371358354f5a832e24693d98cfaaff6671a9fa
+````
+
 
 
 
