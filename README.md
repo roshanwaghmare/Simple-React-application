@@ -158,8 +158,25 @@ ls
 docker build .
 docker run -p 8080:80 12afef371358354f5a832e24693d98cfaaff6671a9fa
 ````
+## Section 07
 
+## Github Setup
 
+We're gonna set up first a GitHub repository, that's going to house all of our code. We're then gonna set up a local Git repository. We're gonna connect the local Git repository on your computer to the GitHub remote that we're gonna set up. And then we're gonna take all of our local work and push it up to GitHub.
+
+````
+ git init
+ git add .
+ git commit -m "initial commit"
+ git config user.name [ roshanwaghmare ]
+ git config --global user.email [ wroshan960@gmail.com ]
+ git commit -m "initial commit"
+ git remote add origin https://github.com/roshanwaghmare/docker-react.git
+ git push origin master
+ git remote set-url origin https://classictoken@github.com/roshanwaghmare/docker-react
+ git push origin master
+
+````
 
 
 
