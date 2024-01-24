@@ -108,6 +108,40 @@ We not able to start our same Dev Server in Prod Enivorment becoz we are not mak
 NGINX is an extremely popular web server. It doesn't have a lot of logic tied to it. It's really just about taking incoming traffic and somehow routing it or somehow responding to it with some static files, which is exactly what you and I are going to use it for. So we are going to create a separate Docker file
 
 
+we are going to craete seprate docker file 
+
+## Multi-Step Docker Builds
+
+We will USE 2 Images in one file bcoz we can not use same **Alpine** image for **Nginx**
+
+**BUILD PHASE** AND** RUN PHASE** 
+Now when we copy it over to the run phase, everything else that occurred during that build phase, like the use of the node alpine image, the dependencies that we installed, all that additional stuff gets dropped,
+
+
+
+## We execute some number of commands inside that set of layers and then outta that set of layers, we're just copying over just the bare minimum, just the stuff we care about. So when we do this copy step right here we're essentially dumping everything else that was created while this set of configuration was executed.
+
+````
+FROM node:16-alpine as builder
+WORKDIR '/app'
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+#/app/build all the stuff for run phase copy we are coping file from builder phase and paste it to /app/build and to run anything in 
+#nginx we have to paste the path which is /usr/share/nginx/html we dont have to metion start nginx default start 
+
+
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+
+````
+asa
+
+
+
+
 
 
 
