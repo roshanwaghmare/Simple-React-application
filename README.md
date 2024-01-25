@@ -177,7 +177,17 @@ We're gonna set up first a GitHub repository, that's going to house all of our c
  git push origin master
 
 ````
+## TRAVIS CI 
 
+- The entire idea of Travis CI is to watch for any time that you and I push some changes or some amount of code to the GitHub project that we just created. Anytime that we push up some new code GitHub is essentially gonna tap on the shoulder of Travis and it's gonna say, Hey this person just updated their GitHub repository, there's some new code here or some new version of their application. Travis CI will then automatically pull down all of the code inside of our GitHub repository, and at that point it essentially gives us the ability to do some work.
+
+- goto Travisci.org
+- connect with guthub
+- we have to give Travis a little bit of direction, meaning we have to tell it how to essentially start up Docker, how to run our test suite and how to interpret the results.
+
+- we will create yaml.file in travix for direction we not gonna make any test to dockerfile it's for prod we will test** Dockerfile.dev**
+
+- 88
 
 
 
