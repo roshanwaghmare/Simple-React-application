@@ -1,0 +1,157 @@
+
+All the commands that we executed during this project from starting till end 
+
+node --version
+  301  npm install -g n
+  302  sudo npm install -g n
+  303  n lts
+  304  ls
+  305  npx create-react-app frontend
+  306  node v
+  307  node -v
+  308  cd /usr/pkgsrc/lang/nodejs && make install
+  309  npm install -g n
+  310  sudo npm install -g n
+  311  sudo apt npm install -g n
+  312  curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&sudo apt-get install -y nodejs
+  313  sudo dpkg -r libnode-dev
+  314  sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_21.6.0-1nodesource1_amd64.deb
+  315  sudo apt-get update
+  316  sudo apt-get upgrade
+  317  sudo apt-get install aptitude
+  318  sudo aptitude install nodejs
+  319  node -v
+  320  history
+  321  npx create-react-app frontend
+  322  ls
+  323  cd frontend/
+  324  ls
+  325  npm run test
+  326  npm run build
+  327  ls
+  328  cd build/
+  329  ls
+  330  ls static/js/
+  331  ls
+  332  cd ..
+  333  npm run start
+  334  code .
+  335  ls
+  336  cat Dockerfile.dev
+  337  ls
+  338  docker ps
+  339  docker ps -all
+  340  exit
+  341  docker
+  342  ls
+  343  cd frontend/
+  344  ls
+  345  history
+  346  docker
+  347  ls
+  348  cd frontend/
+  349  ls
+  350  docker build .
+  351  docker build -f dockerfile.dev
+  352  docker build -f Dockerfile.dev .
+  353  code .
+  354  ls
+  355  docker build -f Dockerfile.dev .
+  356  history
+  357  docker run e79c31d7f07d249031b1dfa08458dcb5a673eb96de07595a0a5c0a4014bfc577
+  358  docker run -p 3000:3000 e79c31d7f07d249031b1dfa08458dcb5a673eb96de07595a0a5c0a4014bfc577
+  359  history
+  360  docker ps
+  361  xit
+  362  exit
+  363  docker
+  364  ls
+  365  cd frontend/
+  366  ls
+  367  code .
+  368  docker build -f Dockerfile.dev .
+  369  docker run -p 3000:3000 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf395f9d2c95
+  370  docker run -p 3000:3000 -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf395f9d2c95
+  371  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 5906c40a635ff25c69a33c239195db9eca6ae7788a46175798c9cf395f9d2c95
+  372  docker ps
+  373  docker build -f Dockerfile.dev .
+  374  docker run -p 3000:3000 -v /app/node_modules  -v $(pwd):/app e79efdacfc1fcbf8a7c815ebff994c93e4c17f5bee67837e8cdb89f8b3ebd0aa
+  375  sudo npm run your_build_command
+  376  sudo chown -R $(whoami) ~/.npm
+  377  npm cache clean --force
+  378  docker run -p 3000:3000 e79efdacfc1fcbf8a7c815ebff994c93e4c17f5bee67837e8cdb89f8b3ebd0aa
+  379  docker run -p 3000:3000 -v /app/node_modules  -v $(pwd):/app e79efdacfc1fcbf8a7c815ebff994c93e4c17f5bee67837e8cdb89f8b3ebd0aa
+  380  docker-compose up
+  381  ls
+  382  docker-compose up
+  383  ls
+  384  cat docker-compose.yml
+  385  docker-compose up
+  386  docker ps -all
+  387  docker ps
+  388  docker build -f Dockerfile.dev .
+  389  docker run c2e9788812f39f7120abf76e7de077c969b3aafbc8fb06636c1b851aa78f55d4 npm run test
+  390  docker run -it c2e9788812f39f7120abf76e7de077c969b3aafbc8fb06636c1b851aa78f55d4 npm run test
+  391  docker ps
+  392  docker run -it c2e9788812f39f7120abf76e7de077c969b3aafbc8fb06636c1b851aa78f55d4 npm run test
+  393  docker-compose up
+  394  history
+  395  clear
+  396  docker-compose up --build
+  397  docker ps
+  398  exit
+  399  ls
+  400  cd frontend/
+  401  code .
+  402  docker
+  403  ls
+  404  cd frontend/
+  405  ls
+  406  code .
+  407  ls
+  408  docker build .
+  409  docker run -p 8080:80 12afef371358354f5a832e24693d98cfaaff6671a9fa97336a926540c4444fca
+  410  history
+  411  docker ps
+  412  git init
+  413  git add .
+  414  git commit -m "initial commit"
+  415  git config user.name roshanwaghmare
+  416  git config --global user.email wroshan960@gmail.com
+  417  git commit -m "initial commit"
+  418  git remote add origin https://github.com/roshanwaghmare/docker-react.git
+  419  git push origin master
+  420  git remote set-url origin https://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@https://github.com/roshanwaghmare/docker-react
+  421  git push origin master
+  422  git remote set-url origin https://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@github.com/roshanwaghmare/docker-react
+  423  git push origin master
+  424  history
+  425  docker ps
+  426  exit
+  427  docker
+  428  cd frontend/
+  429  code .
+  430  git add .
+  431  git commit -m "added travis file"
+  432  git push origin master
+  433  docker
+  434  cd frontend/
+  435  code .
+  436  git push origin master
+  437  doker ps
+  438  docker ps
+  439  cd frontend/
+  440  ls
+  441  code .
+  442  gst
+  443  git add .
+  444  git commit -m "added travis deploy confg"
+  445  git push origin master
+  446  git add .
+  447  git commit -m "expose 80"
+  448  git push origin master
+  449  git checkout -b feature
+  450  git add .
+  451  git commit -m "changed to feature"
+  452  git push origin feature
+ 
